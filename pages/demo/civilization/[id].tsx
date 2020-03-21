@@ -14,7 +14,7 @@ interface IProps {
  * @param c
  * @constructor
  */
-const Detail = ({c}: IProps) => {
+const Detail = ({ c }: IProps) => {
   return <CivilizationDetail {...c} />;
 };
 
@@ -24,7 +24,9 @@ export async function getStaticPaths() {
   const res = await axios.get(URL);
   const { civilizations } = res.data;
 
-  const paths = civilizations.map((c: ICivilizationProps) => `/demo/civilization/${c.id}`);
+  const paths = civilizations.map(
+    (c: ICivilizationProps) => `/demo/civilization/${c.id}`
+  );
 
   return {
     paths,
@@ -32,15 +34,15 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
-  const URL = 'https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations';
+// 当前页面获取详情
+export async function getStaticProps({ params }: any) {
+  const URL = `https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/${params.id}`;
 
   const res = await axios.get(URL);
-  const {civilizations} = res.data;
 
   return {
     props: {
-      c: civilizations
+      c: res.data
     }
   };
 }

@@ -20,7 +20,7 @@ const Index = ({ civilizations }: IProps) => {
     <Container fixed>
       <Grid container spacing={3}>
         {civilizations!.map(c => (
-          <Link href="/demo/civlization/[id]" as={`civilization/${c.id}`}>
+          <Link key={c.id} href="/demo/civilization/[id]" as={`/demo/civilization/${c.id}`}>
             <Grid item >
               <h1>{c.name}</h1>
             </Grid>
