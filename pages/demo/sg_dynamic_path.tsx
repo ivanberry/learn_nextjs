@@ -27,16 +27,7 @@ const Index = ({ user }: IProps) => {
 export async function getStaticProps() {
   const token = 'Yi2s_eZHNBskjfJktMQWdQ';
   const URL = 'https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations';
-  const playload = {
-    token,
-    data: {
-      name: 'nameFirst',
-      email: 'internetEmail',
-      phone: 'phoneHome',
-      _repeat: 300
-    }
-  };
-
+  
   const res = await axios.get(URL);
 
   return {
