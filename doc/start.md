@@ -22,3 +22,13 @@
 ## 构建
 
 ![](https://tva1.sinaimg.cn/large/00831rSTgy1gd2euxlx8kj30rm0j0wf0.jpg)
+
+## 三个关键方法
+
+`getStaticProps`
+
+|API  | 用途  | 原理  |
+|:-:|:-:|:-:|:-:|:-:|
+|`getStaticProps`   | pre-render page using props return by it  |   |
+| `getStaticPaths`  | pre-render dynamic page  |   |
+| `getServerSideProps`  | You should use getServerSideProps only if you need to pre-render a page whose data must be fetched at request time  |   |
