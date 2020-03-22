@@ -28,7 +28,7 @@
 `getStaticProps`
 
 |API  | 用途  | 原理  |
-|:-:|:-:|:-:|:-:|:-:|
-|`getStaticProps`   | pre-render page using props return by it  |   |
-| `getStaticPaths`  | pre-render dynamic page  |   |
-| `getServerSideProps`  | You should use getServerSideProps only if you need to pre-render a page whose data must be fetched at request time  |   |
+|:-:|:-:|:-:|
+|`getStaticProps`   | pre-render page using props return by it  | 待更新  |
+| `getStaticPaths`  | pre-render dynamic page  |  待更新 |
+| `getServerSideProps`  | You should use getServerSideProps only if you need to pre-render a page whose data must be fetched at request time  | 待更新  |
