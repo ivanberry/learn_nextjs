@@ -3,6 +3,7 @@ import CivilizationDetail, {
 } from '../../../components/civilizationDetail';
 import React from 'react';
 import axios from 'axios';
+import {useRouter} from "next/router";
 
 interface IProps {
   c: ICivilizationProps;
@@ -15,6 +16,9 @@ interface IProps {
  * @constructor
  */
 const Detail = ({ c }: IProps) => {
+  const router = useRouter();
+  const {id} = router.query;
+  console.log('civilization id is: ', id);
   return <CivilizationDetail {...c} />;
 };
 

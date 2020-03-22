@@ -1,9 +1,7 @@
 import { Grid, Container } from '@material-ui/core';
 import React from 'react';
 import axios from 'axios';
-import CivilizationDetail, {
-  ICivilizationProps
-} from '../../../components/civilizationDetail';
+import { ICivilizationProps } from '../../../components/civilizationDetail';
 import Link from 'next/link';
 
 interface IProps {
@@ -20,8 +18,12 @@ const Index = ({ civilizations }: IProps) => {
     <Container fixed>
       <Grid container spacing={3}>
         {civilizations!.map(c => (
-          <Link key={c.id} href="/demo/civilization/[id]" as={`/demo/civilization/${c.id}`}>
-            <Grid item >
+          <Link
+            key={c.id}
+            href="/demo/civilization/[id]"
+            as={`/demo/civilization/${c.id}`}
+          >
+            <Grid item>
               <h1>{c.name}</h1>
             </Grid>
           </Link>
