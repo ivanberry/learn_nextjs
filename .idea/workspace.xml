@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d13a056-e6ee-4e9a-95c5-e265d3097bf2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/start.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/start.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584708476477</updated>
       <workItem from="1584708479790" duration="1850000" />
-      <workItem from="1584710407928" duration="10445000" />
+      <workItem from="1584710407928" duration="10517000" />
     </task>
     <servers />
   </component>
@@ -173,10 +172,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="689" y="339" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1584711459423" />
-    <state x="1108" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1584837741037">
+    <state x="1108" y="241" width="838" height="676" key="search.everywhere.popup" timestamp="1584837816093">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1108" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1584837741037" />
+    <state x="1108" y="241" width="838" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1584837816093" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
